@@ -1,0 +1,576 @@
+/* Utility CSS */
+@import url("../custom/custom-utility.css");
+
+/* TABLE OF CONTENT
+1. * * *
+2. Navbar
+3. Hero
+/* ------------- */
+
+/* -----------------------------------------
+            1. * * *
+-------------------------------------------- */
+body,
+html {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .display1 {
+        font-size: 64px !important;
+        line-height: 78px !important;
+    }
+
+    .display2 {
+        font-size: 56px !important;
+        line-height: 70px !important;
+    }
+}
+
+/* -----------------------------------------
+            2. Navbar
+-------------------------------------------- */
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--neutral-white60);
+}
+
+.navbar .nav-link:hover {
+    color: var(--neutral-white);
+}
+
+.navbar .nav-item {
+    margin-right: 32px;
+}
+
+.navbar .nav-item:last-child {
+    margin-right: 0px;
+}
+
+.language a {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--neutral-white);
+    text-decoration: none;
+}
+
+.language .breadcrumb {
+    margin-bottom: 0px;
+}
+
+.language .active {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--neutral-white60);
+}
+
+.language .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--neutral-white60);
+    padding-right: 16px;
+}
+
+.language .breadcrumb-item {
+    margin-right: 10px;
+}
+
+.navbar .navbar-toggler {
+    border: 2px solid var(--neutral-white60);
+    border-radius: 48px;
+    padding: 8px;
+}
+
+.navbar .navbar-toggler span {
+    top: 0px
+}
+
+/* .navbar-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: var(--neutral-white) !important;
+    border-bottom: 1px solid var(--light);
+}
+
+.navbar-scroll .nav-link {
+    color: var(--neutral-whitegray) !important;
+}
+
+.navbar .nav-link.active {
+    color: var(--primary) !important;
+} */
+
+/* -----------------------------------------
+            3. Hero
+-------------------------------------------- */
+.hero {
+    background: center bottom;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 32px;
+}
+
+.hero .display1 {
+    max-width: 700px;
+    color: var(--neutral-white) !important;
+    text-align: center;
+    margin: auto;
+    margin-top: 168px;
+}
+
+/* -----------------------------------------
+            4. About
+-------------------------------------------- */
+.about .display2 {
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.about .description {
+    padding: 0px 80px;
+}
+
+.about .sunny {
+    position: absolute;
+    top: -56px;
+    right: -16px;
+}
+
+.about .description p {
+    line-height: 48px !important;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .about img {
+        max-width: 100%;
+    }
+
+    .about .sunny {
+        right: 40px;
+    }
+
+    .about .description {
+        padding: 48px 24px 0px 24px;
+    }
+}
+
+/* -----------------------------------------
+            5. Accomodation
+-------------------------------------------- */
+.accomodation .display2 {
+    text-align: center;
+    margin: auto;
+}
+
+.accomodation .carousel .owl-item.active.center .card-slider {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.accomodation .carousel .card-slider {
+    position: relative;
+}
+
+.accomodation .slider {
+    position: relative;
+}
+
+.accomodation .slider .owl-item.active.center .card-slider {
+    transform: scale(1);
+    position: relative;
+    z-index: 99;
+    opacity: 1;
+}
+
+.accomodation .card-slider {
+    background: var(--dark);
+    padding: 0px 0px;
+    margin: 0px ​15px 0px 15px;
+    border-radius: 40px;
+    overflow: hidden;
+    transform: scale(0.8);
+    opacity: 0.8;
+    transition: all .3s;
+}
+
+.accomodation .card-slider img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.accomodation .card-slider .description {
+    display: none;
+    transition: all .5s;
+}
+
+.accomodation .slider .owl-item.active.center .card-slider .description {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 40px 100px 40px 40px;
+    background-color: var(--secondary-yellow);
+    border-radius: 32px 0px 0px 0px;
+}
+
+.accomodation .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50%);
+    left: 88px;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+
+.accomodation .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50%);
+    right: 88px;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+
+.accomodation .owl-nav .btn-control {
+    padding: 16px;
+    border: 1px solid var(--neutral-white);
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(32px);
+    color: var(--neutral-white);
+}
+
+.accomodation .owl-dots {
+    text-align: center;
+    display: none;
+}
+
+/* .owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.owl-dots .owl-dot.active {
+    background: #f44336 !important;
+} */
+
+/* Responsive */
+@media (max-width: 576px) {
+    .accomodation .owl-nav .owl-prev {
+        left: 16px;
+    }
+
+    .accomodation .owl-nav .owl-next {
+        right: 16px;
+    }
+
+    .accomodation .card-slider img {
+        width: 100% !important;
+    }
+
+    .accomodation .card-slider .description {
+        display: none;
+    }
+}
+
+/* -----------------------------------------
+            6. Dinning
+-------------------------------------------- */
+.dinning {
+    padding-top: 96px;
+}
+
+.dinning .background {
+    position: absolute;
+    top: 0px;
+    z-index: -99;
+    width: 100%;
+    height: 542px;
+}
+
+.dinning .display2 {
+    margin: auto;
+    color: var(--neutral-white);
+    text-align: center;
+    max-width: 612px !important;
+}
+
+.dinning .stars {
+    position: absolute;
+    top: -5px;
+    right: 296px;
+}
+
+.dinning .card-food {
+    background-color: var(--neutral-white);
+    margin: auto;
+    margin-top: 96px;
+    border-radius: 24px;
+    box-shadow: 0px 50px 100px 0px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+.dinning .description {
+    padding: 0px 60px;
+}
+
+.dinning .description p {
+    line-height: 40px !important;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .dinning .background {
+        width: auto;
+    }
+
+    .dinning .stars {
+        display: none;
+    }
+
+    .dinning .description {
+        padding: 32px;
+    }
+}
+
+/* -----------------------------------------
+            7. Room
+-------------------------------------------- */
+.room .highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.room h3 {
+    position: absolute;
+    left: 52px;
+    bottom: 72px;
+    font-size: 64px !important;
+    line-height: 78px !important;
+    font-weight: 800;
+    color: var(--neutral-white);
+}
+
+.room img {
+    transition: all .5s;
+}
+
+.room img:hover {
+    transform: scale(1.2);
+}
+
+/* -----------------------------------------
+            8. Gallery
+-------------------------------------------- */
+.gallery .nav-link.active {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.gallery .nav-link {
+    color: var(--neutral-whitegray);
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;
+    padding: 0px;
+}
+
+.gallery .nav-item {
+    margin-right: 48px;
+}
+
+.gallery .nav-item:last-child {
+    margin-right: 0px;
+}
+
+/* -----------------------------------------
+            9. Guest Review
+-------------------------------------------- */
+.guest-review {
+    background-color: var(--primary-softblue);
+    padding: 96px 0px;
+}
+
+.guest-review .display2 {
+    margin: auto;
+    text-align: center;
+}
+
+.rating {
+    color: var(--neutral-whitegray);
+    width: fit-content;
+    margin: auto;
+}
+
+.rating span {
+    margin-right: 8px;
+}
+
+.rating span:last-child {
+    margin-right: 0px;
+}
+
+.rating .active {
+    color: var(--secondary-yellow);
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+    opacity: 1;
+    width: fit-content;
+}
+
+.carousel .btn-control {
+    background-color: var(--neutral-white);
+    padding: 16px;
+    color: var(--primary);
+    border-radius: 40px;
+    box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* -----------------------------------------
+            10. Local Area
+-------------------------------------------- */
+.local-area .display2 {
+    margin: auto;
+    text-align: center;
+}
+
+.local-area .material-icons-round {
+    padding: 14px;
+    border-radius: 100px;
+}
+
+.local-area .list-group-item {
+    border-bottom: none;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.local-area .list-group-item:last-child {
+    margin-bottom: 0px;
+}
+
+.local-area .badge {
+    background-color: var(--primary-blue20);
+    color: var(--primary);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.local-area .divider {
+    width: 1px;
+    height: 280px;
+    border-right: 2px dashed var(--light);
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .local-area .row {
+        --bs-gutter-y: 56px;
+    }
+}
+
+/* -----------------------------------------
+            11. Address
+-------------------------------------------- */
+.address .display2 {
+    margin: auto;
+    text-align: center;
+}
+
+.address .box {
+    background: url(../../images/address-background.jpg) center;
+    padding: 48px;
+    border-radius: 24px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address h1 {
+    width: 290px;
+    color: var(--neutral-white);
+    font-weight: 800;
+}
+
+.address h5 {
+    color: var(--neutral-white60);
+    font-weight: 400;
+}
+
+.address .btn {
+    width: fit-content;
+}
+
+.address .maps {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .address .row {
+        --bs-gutter-y: 32px;
+    }
+}
+
+/* -----------------------------------------
+            12. Footer
+-------------------------------------------- */
+.footer {
+    background: var(--neutral-darkblue) url(../../images/footer-background.png) center;
+    background-size: cover;
+    padding-top: 56px;
+}
+
+.footer .list-group-item {
+    background-color: transparent;
+    margin-bottom: 12px;
+    border-bottom: none;
+}
+
+.footer .list-group-item a {
+    color: var(--neutral-white60);
+    text-decoration: none;
+}
+
+.footer .list-group-item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer .credit {
+    margin-top: 144px;
+    background-color: var(--neutral-darkblue2);
+    padding: 16px 0px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .footer .row {
+        --bs-gutter-y: 40px;
+    }
+}
